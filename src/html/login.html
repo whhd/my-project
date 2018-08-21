@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/login-interface.css" />
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <script src="../lib/require.js"  data-main='../js/login'></script>
+        <script src="../js/ajax.js"></script>
+    </head>
+    <body>
+
+        <div class="login">
+            <div class="container">
+
+          
+    <!-- top -->
+        <div class="login_top con">
+                <img src="../img/logo_130x60.png"  alt="" />
+                <span>公关村在线旗下网上商城</span>
+                <a href="register.html">立即注册</a>
+                 <a href="">还没Z商城账号?</a>
+        </div>
+<!-- mian -->
+        <div class="main_login con"> 
+                <div class="login_l">
+                    <img src="../img/ad2_1.jpg"  alt="" />
+                </div>
+                <div  class="login_r">
+                       <header>
+                           <span>登录Z商城</span>
+                           <span>商家登录</span>
+                       </header> 
+                       <article>
+                           <input type="text" name="username" placeholder="手机号/邮箱/用户名" id="username" /><span class="usn"></span>
+                       </article>
+                       <aside>
+                            <input type="password" name="password" placeholder="密码" id="password" /><span class="psw"></span>
+                       </aside>
+                       <nav> 
+                            <i><img src="../img/phine.png" alt="" /></i>
+                            <span>手机动态码登录</span>
+                            <a href="">忘记密码</a>
+                       </nav>
+                       <button id="btn">登录</button>
+                       <div class="co_parter">
+                            <div class="pater_top">
+                                <p>合作账号登录</p>
+                                <i><img src="../img/parter_bd.png"  alt="" /></i>  <br />
+                            </div>
+
+                                <a href="">
+                                    <img src="../img/weixin.png"  alt="" />
+                                </a>    
+                                <a href="">
+                                    <img src="../img/weibo.png"  alt="" />
+                                </a>
+                                <a href="">
+                                    <img src="../img/QQ.png"  alt="" />
+                                </a>
+                                <a href="">
+                                    <img src="../img/zhifubao.png"  alt="" />
+                                </a>
+                                <a href="">
+                                    <img src="../img/baidu.png"  alt="" />
+                                </a>
+                          
+                           
+                       </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+<!-- <script>
+        document.getElementById('btn_login').onclick = function(){
+            var params = {username: document.getElementById('username').value, pwd: document.getElementById('pwd').value};
+            $.ajax({
+                api: 'login.php',
+                params,
+                method: 'post',
+                success: function(res){
+                    console.log(res)
+                }
+            })
+        }
+    </script> -->
+    </body>
+</html

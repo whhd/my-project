@@ -1,0 +1,55 @@
+.lb { width: 1280 px; height: 2300px; }
+
+.lb .container { width: 1200px; margin: 0 auto; }
+
+.lb .container .lb-idx { width: 1200px; height: 66px; }
+
+.lb .container .lb-idx h4 { font-size: 12px; line-height: 66px; }
+
+.lb .container .lb-idx h4 span { display: block; float: left; }
+
+.lb .container .lb-idx h4 .red-color { color: red; }
+
+.lb .container .jies { min-height: 118px; width: 1200px; background: #F7F7F7; }
+
+.lb .container .more { width: 1200px; height: 24px; font-size: 12px; text-align: center; line-height: 24px; }
+
+.lb .container .imp { width: 980px; height: 1878px; border: 1px solid #ddd; box-sizing: border-box; float: left; }
+
+.lb .container .imp .imph { height: 40px; background: #F7F7F7; }
+
+.lb .container .imp .imph li { float: left; margin-right: 30px; font-size: 12px; line-height: 40px; }
+
+.lb .container .imp .imph .li1 { padding-left: 15px; }
+
+.lb .container .imp .goodslist ul { width: 980px; height: 1838px; }
+
+.lb .container .imp .goodslist ul li { width: 220px; padding-right: 25px; height: 300px; text-align: center; float: left; padding-top: 46px; font-size: 14px; }
+
+.lb .container .imp .goodslist ul li .price { color: red; }
+
+.lb .container .imp .goodslist ul li img { width: 192px; height: 160px; }
+
+.lb .container .gg { width: 220px; height: 1878px; float: right; text-align: center; font-size: 14px; color: #000; }
+
+.lb .container .gg h4 { height: 40px; background: #ddd; line-height: 40px; }
+
+.lb .container .gg li { padding-top: 20px; }
+
+.lb .container .gg p { line-height: 30px; }
+
+.lb .container .gg .red-color { color: #FF3333; }
+
+.jinxing { height: 430px; width: 1280px; }
+
+.jinxing .container { width: 1200px; margin: 0 auto; height: 430px; }
+
+.jinxing .container h4 { height: 78px; font-size: 14px; text-align: center; }
+
+.jinxing .search { width: 540px; float: left; height: 40px; text-align: center; padding-top: 48px; padding-left: 280px; }
+
+.jinxing .search .search-text { width: 464px; height: 40px; border: 2px solid #EC3639; box-sizing: border-box; }
+
+.jinxing .search .search-btn { display: block; width: 76px; height: 40px; background: #EC3639; box-sizing: border-box; float: right; overflow: hidden; }
+
+.footer { border-top: 2px solid #000; }

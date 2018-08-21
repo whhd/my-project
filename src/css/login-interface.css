@@ -1,0 +1,29 @@
+
+
+.login{width: 1280px;height: 641px;}
+.login .container{width: 990px;height: 641px;margin:0 auto;}
+/*top*/
+.login_top{padding-top: 12px;height: 120px;}
+.login_top img{padding-right: 10px;background: url(../img/top-bd.png) no-repeat right center;}
+.login_top span{font-size: 10px;}
+.login_top a{float: right;font-size: 10px;line-height: 82px;}
+.login_top a:nth-of-type(1){color:orange;display: inline-block;padding-left: 13px;}
+/*mian*/
+.main_login{height: 351px;}
+.main_login .login_l{float: left;margin-right: 90px;}
+.main_login .login_r{float: left;height: 354px;width: 380px;}
+.main_login .login_r  header span{display: inline-block;font-size: 16px;width: 148px;text-align: center;height: 30px;line-height: 30px;}
+.main_login .login_r  header span:hover{border-bottom: 1px solid #DE3030;}
+.main_login .login_r  article input{width: 295px;height: 41px;border:1px solid #ccc;}
+.main_login .login_r  article{margin-top: 26px;}
+.main_login .login_r aside input{width: 295px;height: 41px;border:1px solid #ccc;}
+.main_login .login_r aside{margin-top: 11px;margin-bottom: 10px;}
+.main_login .login_r  nav span{font-size: 10px;}
+.main_login .login_r  nav a{color:#134BA0;font-size: 10px;padding-left: 130px;}
+.main_login .login_r  button{width: 295px;height: 40px;background: #DB2E2E;color:white;margin-top: 16px;margin-bottom: 18px;}
+.main_login .login_r .co_parter p{display: inline-block;width: 192px;font-size: 10px;padding-left: 100px;background: url(../img/parter_bd.png) no-repeat left center;}
+.main_login .login_r .co_parter i{display: inline-block;}
+.main_login .login_r .co_parter a:nth-of-type(1){margin-left: 27px;}
+.main_login .login_r .co_parter .pater_top{margin-bottom: 12px;}
+.main_login .login_r .co_parter a{position:relative;display: inline-block;width: 35px;height: 35px;border-radius: 50%; border:1px solid #ccc;}
+.main_login .login_r .co_parter a img{position:absolute;left: 0;right: 0;bottom:0;top: 0;margin:auto;}

@@ -1,0 +1,81 @@
+/*top*/
+.login_top { padding-top: 12px; height: 120px; }
+
+.login_top img { padding-right: 10px; background: url(../img/top-bd.png) no-repeat right center; }
+
+.login_top span { font-size: 10px; }
+
+.login_top a { float: right; font-size: 10px; line-height: 82px; }
+
+.login_top a:nth-of-type(1) { color: orange; display: inline-block; padding-left: 13px; }
+
+/*register_main*/
+.register_main { height: 763px; border: 1px solid #ccc; }
+
+.register_main header { height: 59px; background: #fafafa; padding-left: 92px; margin-bottom: 30px; }
+
+.register_main header span { color: #99999f; font-size: 16px; line-height: 60px; }
+
+.register_main article { float: left; }
+
+.register_main article .user_phone { height: 44px; }
+
+.register_main article .user_phone span { padding-left: 58px; color: orange; height: 40px; width: 250px; font-size: 14px; border-top: 1px solid #e02d2d; }
+
+.register_main article .phone_number { margin-top: 27px; }
+
+.register_main article .phone_number span { font-size: 16px; }
+
+.register_main article .phone_number input { margin-left: 22px; width: 290px; height: 40px; border: 1px solid #ccc; }
+
+.register_main article .phone_number p { font-size: 10px; color: #ccc; margin-left: 81px; }
+
+.register_main article .pc_code { margin-top: 17px; }
+
+.register_main article .pc_code span:nth-of-type(1) { font-size: 16px; }
+
+.register_main article .pc_code span:nth-of-type(3) { font-size: 10px; color: skyblue; }
+
+.register_main article .pc_code input { margin-left: 22px; width: 170px; height: 40px; border: 1px solid #ccc; }
+
+.register_main article .pc_code p { font-size: 10px; color: #ccc; margin-left: 81px; }
+
+.register_main article .pc_code #showcode { display: inline-block; vertical-align: middle; width: 98px; height: 40px; background: #58bc58; }
+
+.register_main article .password { margin-top: 17px; }
+
+.register_main article .password span { font-size: 16px; }
+
+.register_main article .password input { margin-left: 34px; width: 290px; height: 40px; border: 1px solid #ccc; }
+
+.register_main article .password p { font-size: 10px; color: #ccc; margin-left: 81px; }
+
+.register_main article .repassword { margin-top: 17px; }
+
+.register_main article .repassword span { font-size: 16px; }
+
+.register_main article .repassword input { width: 290px; height: 40px; border: 1px solid #ccc; }
+
+.register_main article .repassword p { font-size: 10px; color: #ccc; margin-left: 81px; }
+
+.register_main article .checkbox { font-size: 10px; margin-top: 28px; padding-left: 80px; }
+
+.register_main article button { height: 40px; width: 290px; background: #dc2e2e; margin-left: 80px; margin-top: 25px; color: white; font-weight: bolder; }
+
+.register_main aside { float: left; width: 251px; margin-left: 230px; }
+
+.register_main aside span { font-size: 14px; }
+
+.register_main aside li { margin-top: 15px; }
+
+/*.register_main article .checkbox*/
+/*footert*/
+#login_register_footer_box { margin-top: 50px; border-top: 1px solid #ccc; height: 55px; }
+
+#login_register_footer_box .login_register_footer a { line-height: 42px; font-size: 10px; padding-left: 5px; }
+
+#login_register_footer_box .login_register_footer a:nth-of-type(1) { background: url(../img/fooer_bd.png) no-repeat right center; }
+
+#login_register_footer_box .login_register_footer a:nth-of-type(2) { background: url(../img/fooer_bd.png) no-repeat right center; }
+
+#login_register_footer_box .login_register_footer span { font-size: 10px; float: right; line-height: 42px; }

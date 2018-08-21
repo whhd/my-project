@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/xiqing.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/lb.css">
+    <script src="../js/lb.js"></script>
+    <!-- <script src="../js/goodsList.js"></script> -->
+   <script src="../js/jquery-3.3.1.js"></script>
+
+    <title>列表页</title>
+</head>
+<body>
+    <div id="zol">
+       <!-- 顶部 -->
+        <div class="top">
+            <div class="container clearfix">
+                <div class="top-l">
+                    <span><a href="http://www.zol.com/">商城首页</a></span>
+                    <span>Hi~欢迎来到Z商城，请<a href="login.html" class="login">登录</a></span> 
+                    <span><a href="register.html" class="register">免费注册</a></span>
+                </div>
+                <div class="top-r">
+                    <ul>
+                        <li><a href="order.html">我的订单</a></li>
+                        <li><a href="buyer.html">买家中心</a></li>
+                        <li><a href="car-num">购物车0件</a></li>
+                        <li><a href="help.html">帮助中心</a></li>
+                        <li class="sj"><a href="phone.html"><i class="icon iconfont icon-shouji1"></i>手机商城<i class="ico"></i></a><img src="../img/ewm.png" width="130" height="130" class="ewm"></li>
+                        <li><a href="http://www.zol.com.cn/">中关村在线</a></li>
+                        <li><a href="#">招商合作</a></li>
+                        <li><a href="#">联系客服<i class="ico"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+                <div class="container clearfix">
+                   <div class="header-l">
+                    <a href="http://www.zol.com"><img src="../img/logo.png" alt=""></a>
+                        <div href="#" class="city-location">
+                            <span href="javascript" class="city-name">全国<em class="icon"></em></span>
+                            <!-- <ul class="city-list">
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=beijing">北京</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=chengdu">成都</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=qingdao">青岛</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=xian">西安</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=zhengzhou">郑州</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=shijiazhuang">石家庄</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=pingdingshan">平顶山</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=shanghai">上海</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=deyang">德阳</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=xingtai">邢台</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=chengde">承德</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=zhumadian">驻马店</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=anyang">安阳</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=xinxiang">新乡</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=baoji">宝鸡</a></li>
+                                                    <li><a href="http://www.zol.com/index.php?c=IndexNew&amp;city=quanguo" class="cur">全国</a></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                    
+                    <div class="header-c">
+                            <div class="search">
+                                    <input name="keyword" type="text" class="search-text" autocomplete="off" placeholder="找找您想要的商品" value="">
+                                    <input type="submit" value="搜索" class="search-btn" hidefocus="true">
+                    </div>
+                  
+                </div>
+                <div class="header-r">
+                        <a href="#" class="order"><i class="icon iconfont icon-wodedingdan"></i>我的订单</a>
+                        <a href="#" class="coupon"><i class="icon iconfont icon-coupon"></i>我的优惠券</i></a>
+                        <a href="#" class="cart"><i class="icon iconfont icon-gouwuche"></i><em class="number">购物车</a>
+            </div>
+          </div>
+        </div>
+            <!-- nav -->
+            <div class="nav">
+
+                <div class="container clearfix">
+                    <div class="nav-all">
+                        
+                                    <div class="nli1"><i class="icon iconfont icon-fenlei"></i><span>全部分类</span>
+                                    
+                                      <div class="erji">
+                                            <li><p><i class="icon iconfont icon-shouji1"></i><span class="e1">手机</span><span>&gt;</span></p>
+                                            
+                                              <div class="nr">
+                                                <img src="../img/n1.jpg" alt="" height="400" >
+                                              </div>
+                                              <div class="lj">
+                                                   <a href="#"><p>手机</p></a>
+                                                   <a href="#"><p>移动电源</p></a>
+                                                    <a href="#"><p>蓝牙耳机</p></a>
+                                                    <a href="#"><p>手机贴膜</p></a>
+                                                    <a href="#"><p>保护套</p></a>
+                                                    <a href="#"><p>数据线</p</a>>
+                                                    <a href="#"><p>充电宝</p></a>
+                                                    <a href="#"><p>手机维修</p></a>
+                                              </div>
+                                            </li>
+                                            <li><p><i class="icon iconfont icon-diannao"></i><span class="e1">电脑</span> <span>&gt;</span></p>
+                                                <div class="nr">
+                                                        <img src="../img/n2.jpg" alt="" height="400" >
+                                                      </div>
+                                                      <div class="lj">
+                                                           <a href="#"><p>笔记本电脑</p></a>
+                                                           <a href="#"><p>游戏本</p></a>
+                                                            <a href="#"><p>超极本</p></a>
+                                                            <a href="#"><p>二合一平板电脑</p></a>
+                                                            <a href="#"><p>平板电脑</p></a>
+                                                            <a href="#"><p>一体机</p></a>>
+                                                            <a href="#"><p>充电宝</p></a>
+                                                            <a href="#"><p>手机维修</p></a>
+                                                      </div>
+                                            </li>
+                                            <li><p><i class="icon iconfont icon-DIY"></i><span class="e1">DIY</span><span>&gt;</span></p>
+                                                <div class="nr">
+                                                        <img src="../img/n3.jpg" alt="" height="400" >
+                                                      </div>
+                                                      <div class="lj">
+                                                           <a href="#"><p>DIY主机</p></a>
+                                                           <a href="#"><p>移动电源</p></a>
+                                                            <a href="#"><p>蓝牙耳机</p></a>
+                                                            <a href="#"><p>手机贴膜</p></a>
+                                                            <a href="#"><p>保护套</p></a>
+                                                            <a href="#"><p>数据线</p</a>>
+                                                            <a href="#"><p>充电宝</p></a>
+                                                            <a href="#"><p>手机维修</p></a>
+                                                      </div>
+                                            </li>
+                                            <li><p><i class="icon iconfont icon-shuma"></i><span class="e1">数码</span><span>&gt;</span></p>
+                                                <div class="nr">
+                                                        <img src="../img/n4.jpg" alt="" height="400" >
+                                                      </div>
+                                                      <div class="lj">
+                                                           <a href="#"><p>数码相机</p></a>
+                                                           <a href="#"><p>移动电源</p></a>
+                                                            <a href="#"><p>蓝牙耳机</p></a>
+                                                            <a href="#"><p>手机贴膜</p></a>
+                                                            <a href="#"><p>保护套</p></a>
+                                                            <a href="#"><p>数据线</p</a>>
+                                                            <a href="#"><p>充电宝</p></a>
+                                                            <a href="#"><p>手机维修</p></a>
+                                                      </div>
+                                                
+                                            </li>
+                                            <li><p><i class="icon iconfont icon-dianzijingji"></i><span class="e1">外设</span><span>&gt;</span></p>
+                                                <div class="nr">
+                                                        <img src="../img/n5.jpg" alt="" height="400" >
+                                                      </div>
+                                                      <div class="lj">
+                                                           <a href="#"><p>键盘</p></a>
+                                                           <a href="#"><p>移动电源</p></a>
+                                                            <a href="#"><p>蓝牙耳机</p></a>
+                                                            <a href="#"><p>手机贴膜</p></a>
+                                                            <a href="#"><p>保护套</p></a>
+                                                            <a href="#"><p>数据线</p</a>>
+                                                            <a href="#"><p>充电宝</p></a>
+                                                            <a href="#"><p>手机维修</p></a>
+                                                      </div>
+                                            
+                                            </li>
+                                            <li class="lid"><p><i class="icon iconfont icon-zhineng"></i><span class="e1">智能</span><span>&gt;</span></p>
+                                            
+                                                <div class="nr">
+                                                        <img src="../img/n6.jpg" alt="" height="400" >
+                                                      </div>
+                                                      <div class="lj">
+                                                           <a href="#"><p>智能手环</p></a>
+                                                           <a href="#"><p>移动电源</p></a>
+                                                            <a href="#"><p>蓝牙耳机</p></a>
+                                                            <a href="#"><p>手机贴膜</p></a>
+                                                            <a href="#"><p>保护套</p></a>
+                                                            <a href="#"><p>数据线</p</a>>
+                                                            <a href="#"><p>充电宝</p></a>
+                                                            <a href="#"><p>手机维修</p></a>
+                                                      </div>
+                                            </li>
+                                        </div> 
+                                    
+                                    </div>
+                                   
+                               
+                        <ul>
+                               
+                            <li>
+                                <a href="#"> 首页 </a>  
+                            </li>
+                            <li>
+                                <a href="#"> 团购 </a>  
+                            </li>
+                            <li>
+                                <a href="#"> 电子竞技 </a>  
+                            </li>
+                            <li>
+                                <a href="#"> 本地优选 </a>  
+                            </li>
+                            <li>
+                                <a href="#"> 家电优选 </a>  
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="lb">
+                <div class="container">
+                    <div class="lb-idx">
+                        <h4><span>首页</span><span>&gt;</span><span>笔记本</span> <span>共</span> <span class="red-color" >6666</span><span>件</span> </h4> 
+                    </div>
+
+                    <div class="jies">
+
+                    </div>
+                    <p class="more">更多选项</p>
+                    <img src="../img/lbx.png" alt="">
+
+                    <div class="imp">
+                       <div class="imph">
+                            <li class="li1"><a href="#">默认</a></li>
+                            <li><a href="#">高人气</a></li>
+                            <li><a href="#">高销量</a></li>
+                            <li><a href="#">价格由低到高</a></li>
+                            <li><a href="#">价格由高到低</a></li>
+                            <li><a href="#">发货地</a></li>
+                       </div>
+                        <div class="goodslist">
+
+                        </div>
+                    </div>
+                    <div class="gg">
+                        <div>
+                            <h4><span>本地优选</span><span>广告</span></h4>
+                           <ul >
+                               <li>
+                                  <a href="#"> <img src="../img/lb1.png" width="220" alt=""></a>
+                                  <a href="#"> <p>顺丰包邮 华硕520笔记本</p></a>
+                                   <p class="red-color">$3333</p>
+                               </li>
+                               <li>
+                                    <a href="#"> <img src="../img/lb1.png" width="220" alt=""></a>
+                                    <a href="#"> <p>顺丰包邮 华硕520笔记本</p></a>
+                                     <p class="red-color">$3333</p>
+                                 </li>
+                                 <li>
+                                        <a href="#"> <img src="../img/lb1.png" width="220" alt=""></a>
+                                        <a href="#"> <p>顺丰包邮 华硕520笔记本</p></a>
+                                         <p class="red-color">$3333</p>
+                                     </li>
+                                     <li>
+                                            <a href="#"> <img src="../img/lb1.png" width="220" alt=""></a>
+                                            <a href="#"> <p>顺丰包邮 华硕520笔记本</p></a>
+                                             <p class="red-color">$3333</p>
+                                         </li>
+                                         <li>
+                                                <a href="#"> <img src="../img/lb1.png" width="220" alt=""></a>
+                                                <a href="#"> <p>顺丰包邮 华硕520笔记本</p></a>
+                                                 <p class="red-color">$3333</p>
+                                             </li>
+                                             <li>
+                                                    <a href="#"> <img src="../img/lb1.png" width="220" alt=""></a>
+                                                    <a href="#"> <p>顺丰包邮 华硕520笔记本</p></a>
+                                                     <p class="red-color">$3333</p>
+                                                 </li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+                <div class="jinxing">
+                    <div class="container">
+                        <h4>正在进行中的活动</h4>
+                        <img src="../img/g1.png" alt="" width="284">
+                        <img src="../img/g2.png" alt="" width="284">
+                        <img src="../img/g3.png" alt="" width="284">
+                        <img src="../img/g4.png" alt="" width="284" class="en">
+                        <div class="search">
+                                <input name="keyword" type="text" class="search-text" autocomplete="off" placeholder="找找您想要的商品" value="">
+                                <input type="submit" value="搜索" class="search-btn" hidefocus="true">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+        
+
+
+         
+
+
+            <!-- footer -->
+
+            <div class="footer">
+                <div class="container">
+                   <ul class="footer-t">
+                        <li>
+                                <i class="icon iconfont icon-xianxingpeifu"></i>
+                                <p class="p1">先行赔付</p>
+                               <p class="p2"> 权益受损先行赔付</p>   
+                            </li>
+                            <li>
+                                <i class="icon iconfont icon-zhengpinbaozhang"></i>
+                                <p class="p1">正品保障</p>
+                                <p class="p2">正规渠道售后有保障</p> 
+                            </li>
+                            <li>
+                                <i class="icon iconfont icon-wuyoutuihuanhuo"></i>
+                                <p class="p1">无忧退款</p>
+                              <p class="p2">严格按照消法处理</p>
+                            </li>
+                            <li>
+                                <i class="icon iconfont icon-piao"></i>
+                                <p class="p1">发票保障</p>
+                              <p class="p2">售卖商品可提供发票</p>  
+                            </li>
+                            <li>
+                                <i class="icon iconfont icon-kuaidi"></i>
+                                <p class="p1">快递包邮</p>
+                                <p class="p2">满399快递包邮</p>
+                            </li>
+                            <li>
+                                <i class="icon iconfont icon-su"></i>
+                                <p class="p1">急速发货</p>
+                                <p class="p2">24小时内发货</p>
+                            </li>
+                   </ul>
+                    <ul class="footer-c">
+                        <li>
+                            <P><strong>购物指南</strong></P>
+                            <a href="#">
+                                <p>账号注册</p>
+                            </a>
+                            <a href="#">
+                                <p>购物流程</p>
+                            </a>
+                            <a href="#">
+                                <p>付款方式</p>
+                            </a>
+                        </li>
+
+                        <li>
+                                <P><strong>售后服务</strong></P>
+                                <a href="#">
+                                    <p>先行赔付</p>
+                                </a>
+                                <a href="#">
+                                    <p>退款退货流程</p>
+                                </a>
+                                <a href="#">
+                                    <p>投诉举报</p>
+                                </a>
+                        </li>
+                        <li>
+                                <P><strong>商城保障</strong></P>
+                                <a href="#">
+                                    <p>正品保障</p>
+                                </a>
+                                <a href="#">
+                                    <p>物流配送</p>
+                                </a>
+                                <a href="#">
+                                    <p>24小时发货</p>
+                                </a>
+                                <a href="#">
+                                        <p>发票保障</p>
+                                    </a>
+                        </li>
+                        <li>
+                            <p><strong>商家服务</strong></p>
+                            <a href="#">
+                                <p>商家中心</p>
+                            </a>
+                        </li>
+                        <li class="kefu">
+                            <i class="icon iconfont icon-kefu"></i>
+                            <p><strong>400-688-1999</strong></p>
+                            <p>工作日 9:00 - 18:00</p>
+                        </li>
+                        <li class="xiangx">
+                            <i class="icon iconfont icon-woshou"></i>
+                            <p><strong>招商合作</strong></p>
+                            <p>助力3c零售商互联网转型</p>
+                            <p>开启新零售时代全新旅程</p>
+                            <p class="chak">查看详细&gt;</p>
+                            <p></p>
+                        </li>
+                    </ul>   
+
+                    <ul class="footer-b">
+                        <li class="fbl">
+                           <p>
+
+                            <span class="zai">中关村在线</span>
+                            <span>Z商城</span>
+                            <span>团购</span>
+                            <span>产品报价</span>
+                            <span>论坛</span>
+                            <span>问答</span>
+                        </p>
+                        <p>
+                            <span class="guan">关于Z商城</span>
+                            <span>帮助中心</span>
+                            <span>联系我们</span>
+                            <span><i></i></span>
+                        </p>
+                        <p>©2018中关村在线版权所有. 京ICP证150096号京ICP备14061128号网络文化经营许可证京网文[2016]1631-199</p>
+                        </li>
+                        <li class="fbr">
+                             <i class="icon iconfont icon-xinlang"></i><span>关注新浪微博</span>
+                            <i class="icon iconfont icon-weixin"></i>
+                            <img src="../img/ewm.png" width="100" height="100" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+   
+    <script src="../js/common.js"></script>
+    
+</body>
+</html>
