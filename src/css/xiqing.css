@@ -135,6 +135,12 @@
 
 #zol .xq .container .xqr .xxxx div { height: 30px; }
 
+#zol .xq .container .xqr .xxxx .buys { width: 198px; height: 30px; }
+
+#zol .xq .container .xqr .xxxx .buys span { display: block; float: left; }
+
+#zol .xq .container .xqr .xxxx .buys input { display: block; width: 30px; float: left; text-align: center; }
+
 #zol .main { width: 1280px; height: 1000px; background: #ccc; }
 
 #zol .footer { width: 1280px; background-color: #F7F7F7; }

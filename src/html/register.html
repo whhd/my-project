@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../css/register.css" />
         <link rel="stylesheet" type="text/css" href="../css/base1.css" />
+        <script src="../js/common.js"></script>
+        <script src="../js/jquery-3.3.1.js"></script>
         <script src="../js/reg.js"></script>
     </head>
     <body>
@@ -22,31 +24,27 @@
                     <span> <img src="../img/phine.png" alt="" />用手机号注册</span>
                 </div>
                 <div class="phone_number">
-                    <span>*手机号:</span><input name="phonenumber" type="text" class="username" /><span class="u1"></span>
-                    <p>请填写手机号码</p>
+                    <span>*用户名:</span><input name="username" type="text" class="username" /><span class="no"></span>
+                    <p>6-20位,数字开头</p>
                 </div>
                  <div class="pc_code">
-                    <span>*验证码:</span><input class="mycode" name="pc_code" type="text" /><span class="u2"></span> 
-                    <span id="showcode"></span><span>换一张</span>
-                    <p>请填写图片验证码</p>
+                    <span>*验证码:</span><input class="mycode" name="pc_code" type="text" />
+                    <span id="showcode" class="showcode"></span><span class="huan">换一张</span>
+                    <p>请填写图片验证码</p><span class="no3">验证码不对</span> 
                 </div>
-                 <!-- <div class="ph_code">
-                    <span>*验证码:</span><input class="myphonecode" name="phone_code" type="text" /> 
-                    <span id="givecode">获取短信验证码</span>
-                    <p>请填写手机号码,然后点击[获取验证码]</p>
-                </div> -->
+                
                  <div class="password">
-                    <span>*密码:</span><input class="password" name="password" type="text" /><span class="u3"></span> 
+                    <span>*密码:</span><input class="password" name="password" type="text" /><span class="no2">密码不对</span> 
                     <p>6-16位字母数字组合,不可用特殊字符</p>
                 </div>
                  <div class="repassword">
                     <span>*确认密码:</span><input class="repassword" name="repassword" type="text" /> 
-                    <p>再次输入密码</p>
+                    <span class="ckp"></span>
                 </div>
                 <div class="checkbox">
                     <input id="checkbox" type="checkbox" /><span>同意</span><a href=""> 《商城用户协议》 </a><a href=""> 《隐私权说明》 </a>
                 </div>
-                <button>注册</button>
+                <button class="btn btn-success btnReg">注册</button>
             </article>
             <aside>
                 <span>如果你已经注册,请<a href="">直接登录</a>或者用一下方式登录:</span>

@@ -37,6 +37,7 @@
     }
     article {
       float: left;
+     
       .user_phone {
         height: 44px;
         span {
@@ -59,6 +60,7 @@
           height: 40px;
           border: 1px solid #ccc;
         }
+        .no{display:none;}
         p {
           font-size: 10px;
           color: #ccc;
@@ -76,6 +78,7 @@
             color: skyblue;
           }
         }
+       .no3{display:none;}
         input {
           margin-left: 22px;
           width: 170px;
@@ -95,35 +98,8 @@
           background: #58bc58;
         }
       }
-    //   .ph_code {
-    //     margin-top: 17px;
-    //     span {
-    //       &:nth-of-type(1) {
-    //         font-size: 16px;
-    //       }
-    //     }
-    //     #givecode {
-    //       font-size: 10px;
-    //       vertical-align: middle;
-    //       text-align: center;
-    //       line-height: 40px;
-    //       display: inline-block;
-    //       width: 108px;
-    //       height: 40px;
-    //       background: #f8f8f8;
-    //     }
-    //     input {
-    //       margin-left: 22px;
-    //       width: 170px;
-    //       height: 40px;
-    //       border: 1px solid #ccc;
-    //     }
-    //     p {
-    //       font-size: 10px;
-    //       color: #ccc;
-    //       margin-left: 81px;
-    //     }
-    //   }
+      
+     
       .password {
         margin-top: 17px;
         span {
@@ -135,6 +111,7 @@
           height: 40px;
           border: 1px solid #ccc;
         }
+        .no2{display:none;}
         p {
           font-size: 10px;
           color: #ccc;

@@ -330,7 +330,7 @@
                         }
                     }
                     .sale-activity{
-                        
+                    
                         li {
                             position: relative;
                             padding: 4px 0 4px 40px;
@@ -346,6 +346,11 @@
                        div{
                            height: 30px;
                        }
+
+                       .buys{width: 198px;height: 30px;
+                        span{display:block;float: left;}
+                        input{display:block;width: 30px;float: left;text-align: center;}
+                    }
                    }
                    
                 }
