@@ -22,13 +22,13 @@
 
 .lb .container .imp .imph .li1 { padding-left: 15px; }
 
-.lb .container .imp .goodslist ul { width: 980px; height: 1838px; }
+.lb .container .imp .goodslist { width: 980px; height: 1838px; }
 
-.lb .container .imp .goodslist ul li { width: 220px; padding-right: 25px; height: 300px; text-align: center; float: left; padding-top: 46px; font-size: 14px; }
+.lb .container .imp .goodslist li { width: 220px; height: 320px; float: left; padding-right: 25px; text-align: center; float: left; padding-top: 46px; font-size: 14px; }
 
-.lb .container .imp .goodslist ul li .price { color: red; }
+.lb .container .imp .goodslist li img { width: 192px; height: 200px; }
 
-.lb .container .imp .goodslist ul li img { width: 192px; height: 160px; }
+.lb .container .imp .goodslist .price { color: red; }
 
 .lb .container .gg { width: 220px; height: 1878px; float: right; text-align: center; font-size: 14px; color: #000; }
 

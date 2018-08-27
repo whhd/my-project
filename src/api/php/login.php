@@ -6,7 +6,7 @@
     $username = isset($_POST['username']) ? $_POST['username'] : "";
     $password = isset($_POST['password']) ? $_POST['password'] : "";
     echo "$username,$password";
-    $sql = "select * from users where username = '" . $username . "' and password = '" . $password . "'";
+    $sql = "select * from reg where username = '" . $username . "' and password = '" . $password . "'";
     $result = query_sql($sql);
     if(count($result) > 0){
         //使用session保存登录信息

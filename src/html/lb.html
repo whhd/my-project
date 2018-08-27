@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/xiqing.css">
     <link rel="stylesheet" href="../font/iconfont.css">
     <link rel="stylesheet" href="../css/lb.css">
-    <script src="../js/lb.js"></script>
+    <script src="../js/list.js"></script>
     <!-- <script src="../js/goodsList.js"></script> -->
    <script src="../js/jquery-3.3.1.js"></script>
 
@@ -75,7 +75,15 @@
                 <div class="header-r">
                         <a href="#" class="order"><i class="icon iconfont icon-wodedingdan"></i>我的订单</a>
                         <a href="#" class="coupon"><i class="icon iconfont icon-coupon"></i>我的优惠券</i></a>
-                        <a href="#" class="cart"><i class="icon iconfont icon-gouwuche"></i><em class="number">购物车</a>
+                        <a href="car.html" class="cart"><i class="icon iconfont icon-gouwuche"></i><em class="number">购物车</a>
+                            <!-- <script class="number">
+                                window.onload = function(){
+                                    var num = document.querySelector('.number');
+                                    num.onclock = function(){
+                                        location.href = "car.html";
+                                    }
+                                }
+                            </script> -->
             </div>
           </div>
         </div>
@@ -230,8 +238,8 @@
                             <li class="li1">默认</li>
                             <li>高人气</li>
                             <li>高销量</li>
-                            <li class="di">价格由低到高</li>
-                            <li class="gao">价格由高到低</li>
+                            <li><span class="uprice">价格由高到低</span></li>
+                            <li>价格由低到高</li>
                             <li>发货地</li>
                        </div>
                         <div class="goodslist">

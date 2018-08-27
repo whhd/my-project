@@ -12,19 +12,20 @@ jQuery(function(){
                     password
                 };
         console.log(params);
-        http.post("login.php",params,function(res){
+        $.post("../api/php/login.php",params,function(res){
             // 得到后端返回给我们的值
             console.log(res); 
             if(res.indexOf("false")>=0){
                 alert("登录失败");
             }else{
-                alert("登录成功");
+                location.href="../index.html";
+                // alert("登录成功");
                 window.localStorage.setItem('username',username);
               
             }
         })
     })
-    // 以上代码可以实现将账号和密码传给后端，并得到后端返回给我的结果
+   
    
 
 

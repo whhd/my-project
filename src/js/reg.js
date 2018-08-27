@@ -23,10 +23,14 @@
         let xhr = new XMLHttpRequest();
         xhr.onload = ()=>{
             if(status.indexOf(xhr.status) >= 0){
+
                 console.log(xhr.responseText);
-                if(xhr.responseText === 'success'){
+               
+                if(xhr.responseText ==='success'){
                     //跳转到登录页面
-                    location.href = "../html/login.html";
+                    console.log(666);
+                    location.href ="../html/login.html";
+                    
                 }
               
             }

@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded',function(){
 
 
-    var cart = document.querySelector('.cart');
+    var cart = document.querySelector('.goodsCart');
+    
     
 })

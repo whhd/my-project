@@ -52,3 +52,50 @@ $(function(){
 });
 
 
+// 添加购物车
+/*
+spList={
+	IDx
+	NAME
+	QTY
+	price
+	imgsrc
+}
+*/
+function addCkie(spList){
+    var goodslist = Cookie.get('goodslist');
+    var idx = spList.idx;
+    if(goodslist.length > 0){
+        goodslist = JSON.parse(goodslist)
+
+        console.log(goodslist)
+    }else{
+        goodslist = []
+    }
+
+    var has = goodslist.some(function(spList){
+    var res = spList.idx === idx;
+    if(res){
+        spList.qty++
+    }
+
+    return res;
+
+    });
+
+    if(!has){
+        var goods = {
+            idx : idx,
+            qty : 1,
+            imgsrc : spList.imgsrc,
+			price : spList.price,
+			title:spList.title,
+        }
+
+        goodslist.push(goods);
+    }
+
+    // 把商品信息写入cookie
+    document.cookie = 'goodslist=' + JSON.stringify(goodslist);
+}
+

@@ -37,3 +37,5 @@ a:hover { color: #f33; text-decoration: underline; }
 .top .container .top-r ul .sj:hover > .ewm { display: block; }
 
 .logo .logo-l { padding: 30px 160px; }
+
+.goodsCart { height: 414px; width: 1200px; margin: 0 auto; }
