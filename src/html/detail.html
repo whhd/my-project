@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../font/iconfont.css">
     <script type="text/javascript" class="library" src="../js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" class="library" src="../js/jquery.colorbox-min.js"></script>
-    <script type="text/javascript" class="library" src="../js/xiqing.js"></script>
+    <script type="text/javascript" class="library" src="../js/detail.js"></script>
     <title>详情页</title>
 </head>
 <body>
@@ -209,10 +209,10 @@
                                         <ul class="con-FangDa-ImgList">
                                           <!-- 图片显示列表 -->
                                           <li class="active"><img src="../img/xq1.jpg"data-bigimg="../img/k1.jpg"></li>
-                                          <li><img src="../img/xq2.jpg" data-bigimg="../img/k1.jpg"></li>
-                                          <li><img src="../img/xq3.jpg" data-bigimg="../img/b5.jpg"></li>
-                                          <li><img src="../img/xq4.jpg" data-bigimg="../img/b6.jpg"></li>
-                                          <li><img src="../img/xq1.jpg" data-bigimg="../img/b2.jpg"></li>
+                                          <li><img src="../img/xq2.jpg" data-bigimg="../img/c1.jpg"></li>
+                                          <li><img src="../img/xq3.jpg" data-bigimg="../img/c2.jpg"></li>
+                                          <li><img src="../img/xq4.jpg" data-bigimg="../img/c3.jpg"></li>
+                                          <li><img src="../img/xq1.jpg" data-bigimg="../img/c4.jpg"></li>
                                         </ul>
                                       </div>
                             </div>   
@@ -224,7 +224,7 @@
         <dl class="xq-sale-price">
             <dt id="xq-price">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</dt>
             <dd class="clearfix">   
-                <span class="xq-price">¥<em id="zp-goods-price">1758.00</em></span>
+                <span class="xq-price" style="color:red;">¥1758.00</span>
                 <span class="xq-countdown" id="callsStored" style="display: none;"></span>
             </dd>    
         </dl>
@@ -291,20 +291,22 @@
                                 <div>
                                         <dl class="buys">
                                                 <span>购买数量：</span>
-                                                <span>
-                                                    <a href="javascript:" class="jian"><input type="text" value="-" class="jian1"></a>
-                                                    <input type="text" value="1" class="slinput"/>
-                                                    <a href="javascript:" class="jia"> <input type="text" value="+"  class="jia1"></a>
+                                                <li><input type="button" name="minus" value="-" onclick="jian()"><input type="text" name="amount" value="1" id="shang"><input type="button" name="plus" value="+" onclick="jia()"></li>
+                                               
+                                              
                                                    
-                                                   
-                                                </span>
+                                              
                                             </dl>
                                 </div>
 
                                 <div>
                                     <button class="goumai" >立即购买</button>
                                     <button class="car">加入购物车</button>
+
+                                    
+                                   
                                 </div>
+                                <!-- <img src="../img/qqq1.png" alt="" class="qqq"> -->
                             </div>     
                         </div>
                            

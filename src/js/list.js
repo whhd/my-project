@@ -1,62 +1,12 @@
-// document.addEventListener('DOMContentLoaded',()=>{
-			
-  
 
- 
-//     var xhr = new XMLHttpRequest();//readyState=0
-
-//     xhr.onreadystatechange = function(){
-//         // console.log(xhr.readyState)
-//         if(xhr.readyState === 4){
-            
-//             var data = JSON.parse(xhr.responseText);
-//             console.log(data);
-//             var content = `<ul>`;
-//              for(var i=0;i<data.length;i++){
-//              content += `<li data-guid="${data[i].id}">
-//              <a href="xiqing.html"> <img src="${data[i].imgUrl}"/></a>
-//              <a href="xiqing.html"> <h4>${data[i].title}</h4></a>
-
-//             <p>现价：<span class ="price">${data[i].price.toFixed(2)}</span></p>
-//             <p>销量:${data[i].sales}</p>
-//         </li>`;
-//         // var prices= data[i].price;console.log(prices);
-
-//         }
-
-//         content += `</ul>`;
-
-//         // console.log(content);
-
-//         // 获取元素
-//         var goodslist = document.querySelector('.goodslist');
-
-//         goodslist.innerHTML = content;
-       
-           
-//         }
-//     }
-
-//     // 配置参数，建立与服务器连接
-//     xhr.open('get','../api/php/list.php',true);//readyState=1
-
-//     // 发起请求
-//     xhr.send();
-
-    
-//         });
-
-
-
-
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded', function () {
 
     //实例化一个异步请求对象
     var xhr = new XMLHttpRequest();
 
-    xhr.onload = function(){
+    xhr.onload = function () {
 
-        if(xhr.status === 200){
+        if (xhr.status === 200) {
             //确认数据接收完毕
             //在此获取数据：responseText
             // var data = JSON.parse(xhr.responseText);
@@ -64,9 +14,9 @@ document.addEventListener('DOMContentLoaded',function(){
 
             var data = JSON.parse(xhr.responseText);
 
-             console.log(data);
+            console.log(data);
 
-           
+
 
             //获取元素
             // var price = document.querySelector('#price');
@@ -74,8 +24,8 @@ document.addEventListener('DOMContentLoaded',function(){
             var goodslist = document.querySelector('.goodslist');
 
 
-            
-            goodslist.innerHTML = data.map(function(item,idx){
+
+            goodslist.innerHTML = data.map(function (item, idx) {
                 return `<li data-guid="${item.id}">
                     <img img src="${item.imgUrl}"/>
                     <h4>${item.title}</h4> 
@@ -86,20 +36,20 @@ document.addEventListener('DOMContentLoaded',function(){
 
 
             var uprice = document.querySelector('.uprice');
-            uprice.onclick = function(){
+            uprice.onclick = function () {
                 var xhr = new XMLHttpRequest();
 
-                xhr.onload = function(){
-                    if(xhr.status === 200){
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
                         //确认数据接收完毕
                         //在此获取数据：responseText
-                       
+
                         var goodslist = document.querySelector('.goodslist');
                         var datalist = JSON.parse(xhr.responseText);
                         console.log(datalist);
 
                         goodslist.innerHTML = '';
-                        goodslist.innerHTML = data.map(function(item,idx){
+                        goodslist.innerHTML = data.map(function (item, idx) {
                             return `<li data-guid="${item.id}">
                                 <img img src="${item.imgUrl}"/>
                                 <h4>${item.title}</h4> 
@@ -108,46 +58,52 @@ document.addEventListener('DOMContentLoaded',function(){
                             </li>`
                         }).join('\n');
 
+                    }
                 }
+
+
+
+                //配置参数，建立与服务器连接
+                xhr.open('get', '../api/php/listSort.php', true);
+
+
+                //发起请求
+                xhr.send();
+
             }
-         
-
-           
-                    //配置参数，建立与服务器连接
-                    xhr.open('get','../api/php/listSort.php',true);
-
-
-                    //发起请求
-                    xhr.send();
-
         }
+
+        //传参到详情页    
+        let gdli = goodslist.children;
+
+        for (var i = 0; i < gdli.length; i++) {
+            gdli[i].onclick = function (e) {
+                var id = ''
+                
+                if(e.target.tagName !== 'Li'){
+                     id = e.target.parentNode.getAttribute('data-guid') || '';
+                    console.log(e.target.parentNode)
+                    console.log(id)
+                }
+               if(id){
+                location.href = '../html/detail.html?id=' + id;
+               }
+               
+
+
+            }
+        }
+
+
+
+
+
     }
-            
-                    //传参到详情页    
-                    let gdli = goodslist.children;
-                    
-                    for(var i=0;i<gdli.length;i++){
-                    gdli[i].onclick = function(e){
-                        // console.log(e.target.parentNode)
-                    let id = e.target.parentNode.getAttribute('data-id');
-                    
-                            
-                    location.href = 'xiqing.html?id=' + id;
+
+    //配置参数，建立与服务器连接
+    xhr.open('get', '../api/php/list.php', true);
 
 
-           }
-        }
-  
-
-
-
-   
-}
-
-            //配置参数，建立与服务器连接
-            xhr.open('get','../api/php/list.php',true);
-
-
-            //发起请求
-            xhr.send();
+    //发起请求
+    xhr.send();
 });

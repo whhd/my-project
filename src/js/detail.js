@@ -52,6 +52,25 @@ $(function(){
 });
 
 
+
+
+
+
+                                                      
+function jian() {
+	var i = parseInt(document.getElementById("shang").valueOf().value) - 1;
+	document.getElementById("shang").valueOf().value = i;
+	if (i <= 1) {
+		i = 0;
+	}
+}
+function jia() {
+	var i = parseInt(document.getElementById("shang").valueOf().value) + 1;
+	document.getElementById("shang").valueOf().value = i;
+}
+
+var car = document.querySelector('.car');
+
 // 添加购物车
 /*
 spList={
@@ -62,40 +81,40 @@ spList={
 	imgsrc
 }
 */
-function addCkie(spList){
-    var goodslist = Cookie.get('goodslist');
-    var idx = spList.idx;
-    if(goodslist.length > 0){
-        goodslist = JSON.parse(goodslist)
+// function addCkie(spList){
+//     var goodslist = Cookie.get('goodslist');
+//     var idx = spList.idx;
+//     if(goodslist.length > 0){
+//         goodslist = JSON.parse(goodslist)
 
-        console.log(goodslist)
-    }else{
-        goodslist = []
-    }
+//         console.log(goodslist)
+//     }else{
+//         goodslist = []
+//     }
 
-    var has = goodslist.some(function(spList){
-    var res = spList.idx === idx;
-    if(res){
-        spList.qty++
-    }
+//     var has = goodslist.some(function(spList){
+//     var res = spList.idx === idx;
+//     if(res){
+//         spList.qty++
+//     }
 
-    return res;
+//     return res;
 
-    });
+//     });
 
-    if(!has){
-        var goods = {
-            idx : idx,
-            qty : 1,
-            imgsrc : spList.imgsrc,
-			price : spList.price,
-			title:spList.title,
-        }
+//     if(!has){
+//         var goods = {
+//             idx : idx,
+//             qty : 1,
+//             imgsrc : spList.imgsrc,
+// 			price : spList.price,
+// 			title:spList.title,
+//         }
 
-        goodslist.push(goods);
-    }
+//         goodslist.push(goods);
+//     }
 
-    // 把商品信息写入cookie
-    document.cookie = 'goodslist=' + JSON.stringify(goodslist);
-}
+//     // 把商品信息写入cookie
+//     document.cookie = 'goodslist=' + JSON.stringify(goodslist);
+// }
 

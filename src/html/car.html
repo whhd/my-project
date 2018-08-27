@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../font/iconfont.css">
     <link rel="stylesheet" href="../css/car.css">
-    <link rel="stylesheet" href="../js/cart.js">
+  
+   <script src="../lib/jquery-1.8.1.js"></script>
+   <script src="../js/cart.js"></script>
     <title>car</title>
 </head>
 <body>
@@ -23,7 +25,7 @@
                             <li><a href="buyer.html">买家中心</a></li>
                             <li><a href="car-num">购物车0件</a></li>
                             <li><a href="help.html">帮助中心</a></li>
-                            <li class="sj"><a href="phone.html"><i class="icon iconfont icon-shouji1"></i>手机商城<i class="ico"></i></a><img src="img/ewm.png" width="130" height="130" class="ewm"></li>
+                            <li class="sj"><a href="phone.html"><i class="icon iconfont icon-shouji1"></i>手机商城<i class="ico"></i></a><img src="../img/ewm.png" width="130" height="130" class="ewm"></li>
                             <li><a href="http://www.zol.com.cn/">中关村在线</a></li>
                             <li><a href="#">招商合作</a></li>
                             <li><a href="#">联系客服<i class="ico"></i></a>
@@ -35,14 +37,114 @@
             <div class="logo">
                 <div class="logo-l">
                     <a href="../index.html">
-                        <img src="../img/logo_130x60.png" alt="">
+                        <img src="../img/logo_130x60.png" alt="" class="cl">
+                       
                     </a>
+                    <img src="../img/cc1.png" alt="" class="cr">
                 </div>
                
             </div>
 
-            <div class="goodsCart">
-
-            </div>
+            <div id="cart">
+                    <div id="cart-header">
+                        <div class="left w110 ml10">
+                            <input id="selectAll" type="checkbox">
+                            <label for="selectAll">全选</label>
+                        </div>
+                        <div class="left w250">商品</div>
+                        <div class="left w120 center">单价</div>
+                        <div class="left w120 center">数量</div>
+                        <div class="left w120 center">小计</div>
+                        <div class="left w120 center">操作</div>
+                    </div>
+                    <div id="cart-items">
+                        <div class="clear single-item">
+                            <div class="left w20 ml10">
+                                <input name="selectOne" type="checkbox">
+                            </div>
+                            <div class="left w90">
+                                <a href="">
+                                        <img src="../img/c13.jpg" width="70">
+                                </a>
+                            </div>
+                            <div class="left w250">
+                                <span>
+                                        【全国包邮送壳膜】荣耀 畅玩7X（4GB RAM\/全网
+                                </span>
+                            </div>
+                            <div class="left w120 center">&yen;<span class="price">898.00</span></div>
+                            <div class="left w120 center">
+                                <button class="small-button">-</button>
+                                <input class="center count" type="text" size="2" value="1">
+                                <button class="small-button">+</button>
+                            </div>
+                            <div class="left w120 center">&yen;<span>898.00</span></div>
+                            <div class="left w120 center">
+                                <a href="javascript:void(0);">删除</a>
+                            </div>
+                        </div>
+                        <div class="clear single-item">
+                            <div class="left w20 ml10">
+                                <input name="selectOne" type="checkbox">
+                            </div>
+                            <div class="left w90">
+                                <a href="">
+                                        <img src="../img/c13.jpg" width="70">
+                                </a>
+                            </div>
+                            <div class="left w250">
+                                <span>
+                                        【顺丰包邮 送壳膜】魅族 PRO 7 4+64G 全网通 移动联通电信
+                                </span>
+                            </div>
+                            <div class="left w120 center">&yen;<span class="price">1329.00</span></div>
+                            <div class="left w120 center">
+                                <button class="small-button">-</button>
+                                <input class="center count" type="text" size="2" value="1">
+                                <button class="small-button">+</button>
+                            </div>
+                            <div class="left w120 center">&yen;<span>1329.00</span></div>
+                            <div class="left w120 center">
+                                <a href="javascript:void(0);">删除</a>
+                            </div>
+                        </div>
+                        <div class="clear single-item">
+                            <div class="left w20 ml10">
+                                <input name="selectOne" type="checkbox">
+                            </div>
+                            <div class="left w90">
+                                <a href="">
+                                    <img src="../img/c13.jpg" width="70">
+                                </a>
+                            </div>
+                            <div class="left w250">
+                                <span>
+                                        【顺丰包邮 送壳膜】荣耀9青春版 全网通 高配版
+                                </span>
+                            </div>
+                            <div class="left w120 center">&yen;<span class="price">979.00</span></div>
+                            <div class="left w120 center">
+                                <button class="small-button">-</button>
+                                <input class="center count" type="text" size="2" value="1">
+                                <button class="small-button">+</button>
+                            </div>
+                            <div class="left w120 center">&yen;979.00</div>
+                            <div class="left w120 center">
+                                <a href="javascript:void(0);">删除</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cart-footer">
+                        <div class="clear left">
+                            <a id="clearSelected" href="javascript:void(0);">删除选中商品</a>
+                        </div>
+                        <div class="right">
+                            <span>总共选中了<span id="totalCount">0</span>件商品</span>
+                            <span>总计: <span id="totalPrice">&yen;0.00</span></span>
+                            <button class="big-button">去结算</button>
+                        </div>
+                    </div>
+                </div>
+               
 </body>
 </html>
